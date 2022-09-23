@@ -1,0 +1,275 @@
+footer{background-color: lightgreen;}
+
+/* Configurações gerais */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header{
+    background-color: black;
+    border-radius: 15px;
+    margin:10px 0;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: greenyellow;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.logo img{width: 100px;}
+
+label.logo{
+    line-height: 80px;
+    justify-content: center;
+}
+
+.menu_principal a.active, .menu_principal a:hover{
+    background:greenyellow;
+    transition: .5s;
+    color: black;
+}
+
+/* Conteúdo principal */
+main{
+    padding: 10px;
+    background: rgb(235, 232, 232);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carrossel img{
+    height: 600px;
+    border-radius: 10px;
+}
+
+.menu_lateral h5{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+.menu_lateral ul li{margin-top: 50px;}
+
+.menu_lateral ul li a{
+    background:greenyellow;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.menu_lateral a.active, .menu_lateral a:hover{
+    border-style:groove;
+    transition: all .1s;
+}
+
+.mensagem_cards{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.area_cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#botao_comprar{
+    border-color: greenyellow;
+    border-radius: 5px;
+    padding: 3px;
+    background: rgb(235, 235, 235);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#botao_comprar:hover{
+    border-color: greenyellow;
+    background: black;
+    color: greenyellow;
+    transition: all .2s;
+}
+
+.card_un{
+    color: greenyellow;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 200px;
+    padding: 7px 0;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.card_un img{
+    display: block;
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer{
+    height: 30px;
+    background: black;
+    border: greenyellow;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer p{
+    color: greenyellow;
+    font-weight: bold;
+}
+
+
+/* Mobile */
+.botao_check i{
+    font-size: 30px;
+    color: greenyellow;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{display: none;}
+
+@media (max-width:952px){
+    .barra_pesquisa{
+        margin-top: 0px;
+        position: fixed;
+        z-index: 999;
+    }
+
+    main{margin-top: 0px;}
+
+    .logo img{width: 70px;}
+
+    nav ul li a{font-size: 15px;}
+
+    .carrossel{
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    .carrossel img{width: 100%;}
+
+    .menu_lateral{display: none;}
+
+    .card_un{
+        display: block;
+        width: 100%;
+    }
+
+    .card_un img{
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (max-width:858px){
+    header{margin-bottom: 0px;}
+
+    .botao_check{
+        display: block;
+    }
+
+    .carrossel{padding: 0px;}
+
+    .carrossel img{scale: 80%;}
+
+    .menu_lateral{display: none;}
+
+    .card_un{
+        display: block;
+        width: 100%;
+    }
+
+    .card_un img{
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 400px;
+        background: black;
+        opacity: 85%;
+        margin-top: 20px;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 999;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{font-size: 20px;}
+
+    a.active, a:hover{
+        background:greenyellow;
+        transition: .5s;
+        color: black;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+    #check:checked ~ label i:nth-child(1){
+        display: none;
+    }
+
+    #check:checked ~ label i:nth-child(2){
+        display: block;
+    }
+
+    #check:not(checked) ~ label i:nth-child(1){
+        display: block;
+    }
+
+    #check:not(checked) ~ label i:nth-child(2){
+        display: none;
+    }
+}
