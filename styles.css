@@ -195,6 +195,7 @@ footer p{
     .menu_lateral{display: none;}
 
     .card_un{
+        margin-left: 0px;
         overflow-x: hidden;
         border-radius: 0px;
         width: 100%;
