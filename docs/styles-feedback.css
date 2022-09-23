@@ -24,6 +24,10 @@
         margin-top: 80px;
     }
 
+    .caixa_texto{
+        width: 100%;
+    }
+
 
 }
 
@@ -31,6 +35,10 @@
 
     .feedback{
         margin-top: 80px;
+    }
+
+    .caixa_texto{
+        width: 100%;
     }
 
 }
