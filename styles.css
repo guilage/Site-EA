@@ -169,7 +169,11 @@ footer p{
 #check{display: none;}
 
 @media (max-width:952px){
+    main{border-radius: 0px;}
+
     .barra_pesquisa{
+        overflow-x: hidden;
+        border-radius: 0px;
         margin-top: 0px;
         position: fixed;
         z-index: 999;
@@ -191,7 +195,8 @@ footer p{
     .menu_lateral{display: none;}
 
     .card_un{
-        display: block;
+        overflow-x: hidden;
+        border-radius: 0px;
         width: 100%;
     }
 
@@ -200,10 +205,21 @@ footer p{
         margin-bottom: 5px;
     }
 
+    footer{
+        border-radius: 0px;
+    }
+
 }
 
 @media (max-width:858px){
-    header{margin-bottom: 0px;}
+    main{border-radius: 0px;}
+
+    .barra_pesquisa{
+        border-radius: 0px;
+        margin-top: 0px;
+        position: fixed;
+        z-index: 999;
+    }
 
     .botao_check{
         display: block;
@@ -216,6 +232,7 @@ footer p{
     .menu_lateral{display: none;}
 
     .card_un{
+        border-radius: 0px;
         display: block;
         width: 100%;
     }
@@ -272,4 +289,6 @@ footer p{
     #check:not(checked) ~ label i:nth-child(2){
         display: none;
     }
+
+    footer{border-radius: 0px;}
 }
