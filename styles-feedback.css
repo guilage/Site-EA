@@ -1,0 +1,36 @@
+.caixa_texto{
+    display: block;
+    border-radius: 10px;
+}
+
+#botao_feedback{
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#botao_feedback:active{
+    background-color: black;
+    color: greenyellow;
+}
+
+@media (max-width:952px) {
+
+
+    .feedback{
+        margin-top: 80px;
+    }
+
+
+}
+
+@media (max-width:858) {
+
+    .feedback{
+        margin-top: 80px;
+    }
+
+}
