@@ -1,5 +1,3 @@
 # Site-EA
 
-Criei essa página inicial para praticar um pouco responsividade em mobiles e o uso de bootstrap.
-
-Não ficou perfeito, mas estou satisfeito com o resultado.
+Eu criei esse site para praticas alguns conceitos de grid e flex no CSS.
